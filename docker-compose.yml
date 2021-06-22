@@ -1,0 +1,14 @@
+version: "3.7"
+services:
+    # api:
+    #     image: jeffrygonzalez/bes100api:latest
+    #     depends_on: 
+    #         - sql
+    #     ports:
+    #         - 80:80
+    #     environment: 
+    #         - ConnectionStrings__library=server=sql;database=books_docker;user=sa;password=TokyoJoe138!
+    sql:
+        image: jeffrygonzalez/bes100-may-sql:latest
+        ports:
+            - 1433:1433
