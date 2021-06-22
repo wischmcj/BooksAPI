@@ -23,7 +23,7 @@ namespace ReservationsApi.Controllers
             {
                 return BadRequest(ModelState);
             }
-            await Task.Delay(3000); //Simulating processing time when there is actual code here
+           // await Task.Delay(3000); //Simulating processing time when there is actual code here
         
 
             var response = new ReservationResponse
