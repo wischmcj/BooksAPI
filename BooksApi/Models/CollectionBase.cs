@@ -8,5 +8,6 @@ namespace BooksApi.Models
     public class CollectionBase<T>
     {
         public List<T> Data { get; set; }
+        public DateTime WhenProduced { get; set; } = DateTime.Now;
     }
 }

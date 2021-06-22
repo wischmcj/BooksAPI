@@ -9,6 +9,6 @@ services:
     #     environment: 
     #         - ConnectionStrings__library=server=sql;database=books_docker;user=sa;password=TokyoJoe138!
     sql:
-        image: jeffrygonzalez/bes100-may-sql:latest
+        image: jeffrygonzalez/sql-bes200-june-2021:latest
         ports:
             - 1433:1433
