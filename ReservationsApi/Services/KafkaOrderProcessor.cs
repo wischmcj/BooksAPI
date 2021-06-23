@@ -27,6 +27,7 @@ namespace ReservationsApi.Services
         {
             var json = JsonSerializer.Serialize(request);
             await _producer.ProduceAsync("reservation-requests", new Message<Null, string> { Value = json });
+            
         }
     }
 }

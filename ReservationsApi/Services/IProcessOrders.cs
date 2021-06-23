@@ -1,18 +1,10 @@
 ﻿using ReservationsApi.Controllers;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace ReservationsApi.Services
 {
-    public class IProcessOrders
+    public interface IProcessOrders
     {
-        internal Task Send(ReservationResponse response)
-        {
-            
-            throw new NotImplementedException();
-        }
+        Task Send(ReservationResponse response);
     }
 }

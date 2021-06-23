@@ -18,6 +18,7 @@ namespace CalendarApi.Controllers
         }
 
         [HttpGet("holidays")]
+        [ResponseCache(Location = ResponseCacheLocation.Any, Duration = 60*15)]
         public async Task<ActionResult> GetAllHolidays()
         {
             var upcomingHolidays = await _context.Holidays

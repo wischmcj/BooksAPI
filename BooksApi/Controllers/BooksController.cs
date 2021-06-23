@@ -28,7 +28,7 @@ namespace BooksApi.Controllers
         }
 
         [HttpGet("books")]
-        [ResponseCache(Location =ResponseCacheLocation.Any, Duration = 3*60*60)]
+        [ResponseCache(Location = ResponseCacheLocation.Any, Duration = 3*60*60)]
         public async Task<ActionResult<CollectionBase<GetBookSummaryItemResponse>>> GetAllBooks()
         {
 

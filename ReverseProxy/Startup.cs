@@ -39,11 +39,13 @@ namespace ReverseProxy
                     pol.WithMethods("GET");
                     pol.AllowAnyHeader();
                 });
+
                 builder.AddPolicy("nonAuthReadWrite", pol =>
                 {
                     pol.AllowAnyOrigin();
                     pol.AllowAnyMethod();
                     pol.AllowAnyHeader();
+                  
                 });
             });
         }
